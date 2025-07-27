@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* BZEN Design System - Holistic Psychology Center */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    /* Base colors */
+    --background: 252 100% 99%;
     --foreground: 222.2 84% 4.9%;
 
+    /* Card and surface colors */
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
+    --card-soft: 252 100% 98%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* BZEN Brand Colors */
+    --primary: 262 83% 58%; /* #7C3AED - Spiritual Purple */
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 262 83% 70%;
+    --primary-glow: 262 83% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 330 81% 60%; /* #F472B6 - Warm Pink */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 330 81% 75%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 142 76% 36%; /* #22C55E - Growth Green */
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 142 76% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Text colors */
+    --text-primary: 222.2 84% 4.9%; /* Main text */
+    --text-secondary: 215 16% 47%; /* Secondary text */
+    --text-muted: 215 16% 65%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Surface variations */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --radius: 0.5rem;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262 83% 58%;
+
+    /* Design tokens */
+    --radius: 1rem;
+    --radius-sm: 0.75rem;
+    --radius-lg: 1.5rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-soft: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--secondary-light)));
+    --gradient-healing: linear-gradient(180deg, hsl(var(--primary-glow) / 0.1), hsl(var(--secondary-light) / 0.1));
+    --gradient-nature: linear-gradient(135deg, hsl(var(--accent-light)), hsl(var(--primary-light)));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.1);
+    --shadow-glow: 0 0 30px hsl(var(--primary-glow) / 0.3);
+    --shadow-card: 0 10px 40px hsl(var(--primary) / 0.08);
+    --shadow-healing: 0 8px 32px hsl(var(--secondary) / 0.12);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +132,107 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  /* Button Variants */
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-primary-foreground px-8 py-4 rounded-radius font-medium shadow-soft hover:shadow-glow hover:scale-105 transition-all duration-300 border-0;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary border-2 border-primary/20 px-8 py-4 rounded-radius font-medium hover:bg-primary/5 hover:border-primary/40 hover:shadow-soft transition-all duration-300;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-accent-foreground px-6 py-3 rounded-radius-sm font-medium shadow-soft hover:bg-accent-light hover:shadow-glow hover:scale-105 transition-all duration-300;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-primary border border-primary/30 px-6 py-3 rounded-radius-sm font-medium hover:bg-primary/10 hover:border-primary/50 transition-all duration-300;
+  }
+
+  /* Card Components */
+  .card-elevated {
+    @apply bg-card rounded-radius-lg shadow-card hover:shadow-healing transition-all duration-300 border border-white/20;
+  }
+
+  .card-soft {
+    @apply bg-gradient-to-br from-card-soft to-white rounded-radius-lg shadow-soft hover:shadow-card transition-all duration-300;
+  }
+
+  .card-service {
+    @apply bg-white rounded-radius-lg shadow-card hover:shadow-healing hover:-translate-y-2 transition-all duration-300 border border-primary/5;
+  }
+
+  /* Text Styles */
+  .text-hero {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+  }
+
+  .text-section {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
+  }
+
+  .text-subsection {
+    @apply text-xl md:text-2xl font-medium;
+  }
+
+  .text-body {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  /* Animations */
+  .fade-in {
+    @apply animate-[fadeIn_0.6s_ease-out];
+  }
+
+  .slide-in-up {
+    @apply animate-[slideInUp_0.8s_ease-out];
+  }
+
+  .hover-lift {
+    @apply hover:-translate-y-1 hover:shadow-glow transition-all duration-300;
+  }
+
+  /* Gradients */
+  .bg-gradient-healing {
+    background: var(--gradient-healing);
+  }
+
+  .bg-gradient-soft {
+    background: var(--gradient-soft);
+  }
+
+  .bg-gradient-nature {
+    background: var(--gradient-nature);
+  }
+}
+
+@layer utilities {
+  /* Custom animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(var(--primary) / 0.6); }
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
   }
 }
