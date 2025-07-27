@@ -4,8 +4,8 @@ import heroImage from '@/assets/hero-meditation.jpg';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="min-h-screen flex items-center pt-16 px-4 sm:px-0 bg-gradient-healing">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="inicio" className="min-h-screen flex items-center pt-16 bg-gradient-healing overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 lg:space-y-8 fade-in">
@@ -54,8 +54,8 @@ const Hero = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative lg:order-last slide-in-up">
-            <div className="relative">
+          <div className="relative lg:order-last slide-in-up overflow-hidden">
+            <div className="relative mx-auto max-w-full">
               <img
                 src={heroImage}
                 alt="Meditación y sanación en BZEN"
@@ -64,7 +64,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-radius-lg"></div>
               
               {/* Floating card */}
-              <div className="absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 bg-white p-4 lg:p-6 rounded-radius shadow-card max-w-xs">
+              <div className="absolute -bottom-4 left-2 sm:-bottom-6 sm:-left-6 lg:-bottom-6 lg:-left-6 bg-white p-4 lg:p-6 rounded-radius shadow-card max-w-[280px] sm:max-w-xs">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-gradient-soft rounded-full flex items-center justify-center">
                     <span className="text-primary font-bold">BZEN</span>
