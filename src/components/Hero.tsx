@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="space-y-8 fade-in">
             <div>
               <h1 className="text-hero text-text-primary mb-6">
-                Bienvenid@ a{' '}
+                Bienvenido a{' '}
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                   BZEN
                 </span>
