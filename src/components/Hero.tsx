@@ -12,10 +12,7 @@ const Hero = () => {
           <div className="space-y-6 lg:space-y-8 fade-in">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-hero text-text-primary mb-4 lg:mb-6 leading-tight flex items-center">
-                <img src={logoNoAlpha} alt="Logo" className="h-12 sm:h-16 lg:h-20 w-auto mr-2" />ienvenido a {' '}
-                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  BZEN
-                </span>
+                <img src={logoNoAlpha} alt="Logo" className="h-12 sm:h-16 lg:h-20 w-auto mr-2" />ienvenido a&nbsp;<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">BZEN</span>
               </h1>
               <h2 className="text-xl sm:text-2xl lg:text-subsection text-text-secondary mb-4 lg:mb-6">
                 Centro de Terapias Holísticas y Psicología Integrativa
