@@ -113,9 +113,9 @@ const Footer = () => {
         href="https://wa.me/56912345678"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 w-14 h-14 bg-accent text-white rounded-full flex items-center justify-center shadow-glow hover:scale-110 transition-transform duration-300 z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 bg-accent text-white rounded-full flex items-center justify-center shadow-glow hover:scale-110 transition-transform duration-300 z-50"
       >
-        <MessageCircle className="h-6 w-6" />
+        <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6" />
       </a>
     </footer>
   );
