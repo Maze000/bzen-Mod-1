@@ -152,7 +152,7 @@ const Contact = () => {
 
             {/* WhatsApp CTA */}
             <div className="mt-6 pt-6 border-t border-primary/10">
-              <div className="bg-gradient-soft p-4 rounded-radius">
+              <div className="bg-transparent border border-primary/20 p-4 rounded-radius">
                 <p className="text-sm text-text-secondary mb-3">
                   ¿Prefieres hablar directamente?
                 </p>
