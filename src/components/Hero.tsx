@@ -5,14 +5,14 @@ import logoNoAlpha from '@/assets/logonoalpha.png';
 
 const Hero = () => {
   return (
-    <section id="inicio" className="min-h-screen flex items-center pt-16 bg-gradient-healing overflow-hidden">
+    <section id="inicio" className="min-h-screen flex items-center pt-16 mt-12 sm:mt-0 bg-gradient-healing overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 lg:space-y-8 fade-in">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-hero text-text-primary mb-4 lg:mb-6 leading-tight flex items-center">
-                <img src={logoNoAlpha} alt="Logo" className="h-12 sm:h-16 lg:h-20 w-auto mr-2" />ienvenido a&nbsp;<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">BZEN</span>
+                Bienvenido a&nbsp;<span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent flex items-center"><img src={logoNoAlpha} alt="Logo" className="h-12 sm:h-16 lg:h-20 w-auto mr-1" />ZEN</span>
               </h1>
               <h2 className="text-xl sm:text-2xl lg:text-subsection text-text-secondary mb-4 lg:mb-6">
                 Centro de Terapias Holísticas y Psicología Integrativa
@@ -41,8 +41,20 @@ const Hero = () => {
                 <span className="text-sm text-text-muted">Atención presencial y online</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
-                <span className="text-sm text-text-muted">Reembolso Isapre disponible</span>
+                <a 
+                  href="#isapres" 
+                  className="group inline-flex items-center px-4 py-2 bg-gradient-to-r from-secondary/20 to-secondary/30 backdrop-blur-sm border border-secondary/40 rounded-full text-sm font-semibold text-secondary hover:from-secondary/30 hover:to-secondary/40 hover:border-secondary/50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-secondary/25"
+                >
+                  <svg className="w-4 h-4 mr-2 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                    <path d="M12 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                  </svg>
+                  <span className="relative">
+                    Convenios ISAPRES
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
+                  </span>
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>

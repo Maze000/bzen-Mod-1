@@ -1,14 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Instagram, MessageCircle, Heart } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const links = [
-    { name: 'Inicio', href: '#inicio' },
-    { name: 'Psicoterapia', href: '#psicologia' },
-    { name: 'Terapias', href: '#terapias' },
-    { name: 'Contacto', href: '#contacto' },
+    { name: 'Inicio', href: '/#inicio' },
+    { name: 'Sobre Nosotros', href: '/#sobre' },
+    { name: 'Psicología', href: '/#psicologia' },
+    { name: 'Terapias', href: '/#terapias' },
+    { name: 'Talleres', href: '/#talleres' },
+    { name: 'Contacto', href: '/#contacto' },
   ];
 
   const socialLinks = [
@@ -45,12 +48,12 @@ const Footer = () => {
             <ul className="space-y-2">
               {links.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-white/80 hover:text-white transition-colors duration-200 text-sm"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -60,11 +63,31 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold">Servicios principales</h3>
             <ul className="space-y-2 text-sm text-white/80">
-              <li>Psicoterapia Individual</li>
-              <li>Flores de Bach</li>
-              <li>Tarot Terapéutico</li>
-              <li>Mindfulness</li>
-              <li>Talleres Empresariales</li>
+              <li>
+                <Link to="/psicoterapia-individual" className="hover:text-white transition-colors duration-200">
+                  Psicoterapia Individual
+                </Link>
+              </li>
+              <li>
+                <Link to="/terapia-floral" className="hover:text-white transition-colors duration-200">
+                  Flores de Bach
+                </Link>
+              </li>
+              <li>
+                <Link to="/tarot-terapeutico" className="hover:text-white transition-colors duration-200">
+                  Tarot Terapéutico
+                </Link>
+              </li>
+              <li>
+                <Link to="/mindfulness-terapia-evolutiva" className="hover:text-white transition-colors duration-200">
+                  Mindfulness
+                </Link>
+              </li>
+              <li>
+                <Link to="/talleres-empresas" className="hover:text-white transition-colors duration-200">
+                  Talleres Empresariales
+                </Link>
+              </li>
             </ul>
           </div>
 

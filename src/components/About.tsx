@@ -1,18 +1,24 @@
 import React from 'react';
-import { Heart, Shield, Sparkles } from 'lucide-react';
+import { Heart, Sparkles, Users, Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import therapistPortrait from '@/assets/therapist-portrait.jpg';
 
 const About = () => {
   const values = [
     {
-      icon: Shield,
-      title: 'Espacio Seguro',
-      description: 'Un ambiente libre de juicios donde puedes ser auténtico',
+      icon: Heart,
+      title: 'Amor y Compasión',
+      description: 'Acompañamos con amor y compasión cada paso de tu proceso',
     },
     {
-      icon: Heart,
-      title: 'Enfoque Humano',
-      description: 'Cada persona es única y merece un acompañamiento personalizado',
+      icon: Shield,
+      title: 'Espacio Seguro',
+      description: 'Creamos un ambiente seguro y libre de juicios para tu sanación',
+    },
+    {
+      icon: Users,
+      title: 'Acompañamiento Humano',
+      description: 'Te acompañamos de forma humana y personalizada',
     },
     {
       icon: Sparkles,
@@ -103,9 +109,15 @@ const About = () => {
 
             {/* CTA */}
             <div className="pt-8">
-              <a href="#contacto" className="btn-primary">
+              <Link 
+                to="/sobre-bzen" 
+                className="btn-primary inline-flex items-center group hover:scale-105 transition-all duration-300"
+              >
                 Conoce nuestra visión
-              </a>
+                <div className="ml-2 bg-white/20 p-1 rounded-full group-hover:bg-white/30 transition-colors">
+                  <Sparkles className="h-3 w-3 text-white" />
+                </div>
+              </Link>
             </div>
           </div>
         </div>

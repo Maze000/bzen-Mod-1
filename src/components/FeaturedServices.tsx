@@ -1,8 +1,10 @@
 import React from 'react';
-import { ArrowRight, Heart, Brain, Users, Sparkles } from 'lucide-react';
+import { ArrowRight, Heart, Brain, Users, Sparkles, TreePine } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import therapyHands from '@/assets/therapy-hands.jpg';
 import therapyOffice from '@/assets/therapy-office.jpg';
 import workshopCorporate from '@/assets/workshop-corporate.jpg';
+import heroMeditation from '@/assets/hero-meditation.jpg';
 
 const FeaturedServices = () => {
   const services = [
@@ -14,6 +16,7 @@ const FeaturedServices = () => {
       icon: Brain,
       gradient: 'bg-gradient-to-br from-primary/10 to-secondary/10',
       reverse: false,
+      link: '/psicoterapia-individual',
     },
     {
       id: 2,
@@ -23,6 +26,7 @@ const FeaturedServices = () => {
       icon: Heart,
       gradient: 'bg-gradient-to-br from-secondary/10 to-accent/10',
       reverse: true,
+      link: '/terapias-complementarias',
     },
     {
       id: 3,
@@ -32,6 +36,7 @@ const FeaturedServices = () => {
       icon: Sparkles,
       gradient: 'bg-gradient-to-br from-accent/10 to-primary/10',
       reverse: false,
+      link: '/mindfulness-terapia-evolutiva',
     },
     {
       id: 4,
@@ -41,6 +46,17 @@ const FeaturedServices = () => {
       icon: Users,
       gradient: 'bg-gradient-to-br from-primary/10 to-accent/10',
       reverse: true,
+      link: '/talleres-empresas',
+    },
+    {
+      id: 5,
+      title: 'Taller de Crecimiento',
+      description: 'Espacios de desarrollo personal y crecimiento espiritual para conectar con tu esencia más profunda.',
+      image: heroMeditation,
+      icon: TreePine,
+      gradient: 'bg-gradient-to-br from-pink-500/10 to-blue-500/10',
+      reverse: false,
+      link: '/taller-crecimiento',
     },
   ];
 
@@ -84,9 +100,15 @@ const FeaturedServices = () => {
                       Reservar sesión
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
-                    <button className="btn-ghost">
-                      Saber más
-                    </button>
+                    {service.link ? (
+                      <Link to={service.link} className="btn-ghost">
+                        Saber más
+                      </Link>
+                    ) : (
+                      <button className="btn-ghost">
+                        Saber más
+                      </button>
+                    )}
                   </div>
                 </div>
 

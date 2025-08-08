@@ -9,7 +9,7 @@ const Testimonials = () => {
       role: 'Ejecutiva',
       content: 'BZEN me ayudó a encontrar equilibrio en mi vida. La combinación de psicoterapia con flores de Bach fue exactamente lo que necesitaba. Me siento más conectada conmigo misma.',
       rating: 5,
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b937?w=150&h=150&fit=crop&crop=face',
+      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face',
     },
     {
       id: 2,
