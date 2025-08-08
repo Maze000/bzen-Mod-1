@@ -190,15 +190,17 @@ const Auriculoterapia = () => {
         {/* Hero Section */}
         <section className="bg-gradient-healing py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
+            {/* Back button positioned at top left */}
+            <div className="mb-8">
               <Link 
                 to="/" 
-                className="inline-flex items-center text-primary hover:text-primary-light mb-8 transition-colors"
+                className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 hover:bg-primary/30 rounded-full text-primary hover:text-primary transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                <ArrowLeft className="mr-2 h-5 w-5" />
-                Volver al inicio
+                <ArrowLeft className="h-5 w-5" />
               </Link>
-              
+            </div>
+            
+            <div className="text-center">
               <div className="flex justify-center mb-6">
                 <div className="bg-gradient-to-r from-primary to-secondary-light p-4 rounded-full">
                   <Ear className="h-12 w-12 text-white" />

@@ -200,10 +200,9 @@ const TerapiasCorporales = () => {
             <div className="text-center">
               <Link 
                 to="/" 
-                className="inline-flex items-center text-primary hover:text-primary-light mb-8 transition-colors"
+                className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 hover:bg-primary/30 rounded-full text-primary hover:text-primary transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                <ArrowLeft className="mr-2 h-5 w-5" />
-                Volver al inicio
+                <ArrowLeft className="h-5 w-5" />
               </Link>
               
               <div className="flex justify-center mb-6">

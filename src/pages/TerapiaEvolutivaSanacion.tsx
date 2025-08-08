@@ -20,6 +20,16 @@ const TerapiaEvolutivaSanacion = () => {
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Back button positioned at top left */}
+          <div className="mb-8">
+            <Link 
+              to="/" 
+              className="inline-flex items-center justify-center w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full text-white hover:text-white transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <ArrowLeft className="h-5 w-5" />
+            </Link>
+          </div>
+          
           <div className="text-center">
             <div className="flex items-center justify-center mb-8">
               <div className="bg-gradient-to-r from-primary to-secondary p-6 rounded-full shadow-2xl">

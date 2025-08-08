@@ -10,10 +10,9 @@ const TerapiasComplementarias = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link 
             to="/" 
-            className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors"
+            className="inline-flex items-center justify-center w-12 h-12 bg-white/20 hover:bg-white/30 rounded-full text-white hover:text-white transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Volver al inicio
+            <ArrowLeft className="h-5 w-5" />
           </Link>
           
           <div className="flex items-center mb-6">

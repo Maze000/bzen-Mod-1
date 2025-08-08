@@ -118,15 +118,17 @@ const SobreBZEN = () => {
         {/* Hero Section */}
         <section className="bg-gradient-healing py-16 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
+            {/* Back button positioned at top left */}
+            <div className="mb-8">
               <Link 
                 to="/" 
-                className="inline-flex items-center text-primary hover:text-primary-light mb-8 transition-colors"
+                className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 hover:bg-primary/30 rounded-full text-primary hover:text-primary transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
               >
-                <ArrowLeft className="mr-2 h-5 w-5" />
-                Volver al inicio
+                <ArrowLeft className="h-5 w-5" />
               </Link>
-              
+            </div>
+            
+            <div className="text-center">
               <div className="flex justify-center mb-6">
                 <div className="bg-gradient-to-r from-primary to-secondary-light p-4 rounded-full">
                   <Heart className="h-12 w-12 text-white" />
@@ -315,6 +317,83 @@ const SobreBZEN = () => {
             <div className="relative">
               {/* Timeline line */}
               <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-primary to-secondary"></div>
+              
+              {/* Decorative image on the right side */}
+              <div className="absolute right-0 top-0 w-1/2 h-full flex items-center justify-center opacity-30">
+                <div className="relative w-64 h-[500px]">
+                  {/* Tree branches texture background */}
+                  <svg className="absolute inset-0 w-full h-full opacity-80 z-10" viewBox="0 0 384 750" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Gradients for integration */}
+                    <defs>
+                      <linearGradient id="treeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style={{stopColor: '#8B5CF6', stopOpacity: 0.3}} />
+                        <stop offset="50%" style={{stopColor: '#7C3AED', stopOpacity: 0.2}} />
+                        <stop offset="100%" style={{stopColor: '#4C1D95', stopOpacity: 0.1}} />
+                      </linearGradient>
+                    </defs>
+                    
+                    {/* Main trunk */}
+                    <path d="M192 720 Q192 600 192 525 Q192 450 192 375 Q192 300 192 225 Q192 150 192 75" stroke="#8B5CF6" strokeWidth="4.5" fill="none" opacity="1"/>
+                    
+                    {/* Branch 1 - Top left */}
+                    <path d="M192 120 Q150 90 120 60 Q90 30 60 15" stroke="#8B5CF6" strokeWidth="3" fill="none" opacity="0.8"/>
+                    <path d="M192 120 Q135 105 105 75" stroke="#8B5CF6" strokeWidth="2.25" fill="none" opacity="0.7"/>
+                    
+                    {/* Branch 2 - Top right */}
+                    <path d="M192 150 Q240 120 270 90 Q300 60 330 45" stroke="#8B5CF6" strokeWidth="3" fill="none" opacity="0.8"/>
+                    <path d="M192 150 Q225 135 255 105" stroke="#8B5CF6" strokeWidth="2.25" fill="none" opacity="0.7"/>
+                    
+                    {/* Branch 3 - Middle left */}
+                    <path d="M192 300 Q150 270 120 240 Q90 210 60 180" stroke="#8B5CF6" strokeWidth="3" fill="none" opacity="0.8"/>
+                    <path d="M192 300 Q165 285 135 255" stroke="#8B5CF6" strokeWidth="2.25" fill="none" opacity="0.7"/>
+                    
+                    {/* Branch 4 - Middle right */}
+                    <path d="M192 330 Q240 300 270 270 Q300 240 330 210" stroke="#8B5CF6" strokeWidth="3" fill="none" opacity="0.8"/>
+                    <path d="M192 330 Q225 315 255 285" stroke="#8B5CF6" strokeWidth="2.25" fill="none" opacity="0.7"/>
+                    
+                    {/* Branch 5 - Lower left */}
+                    <path d="M192 480 Q150 450 120 420 Q90 390 60 360" stroke="#8B5CF6" strokeWidth="3" fill="none" opacity="0.8"/>
+                    <path d="M192 480 Q165 465 135 435" stroke="#8B5CF6" strokeWidth="2.25" fill="none" opacity="0.7"/>
+                    
+                    {/* Branch 6 - Lower right */}
+                    <path d="M192 510 Q240 480 270 450 Q300 420 330 390" stroke="#8B5CF6" strokeWidth="3" fill="none" opacity="0.8"/>
+                    <path d="M192 510 Q225 495 255 465" stroke="#8B5CF6" strokeWidth="2.25" fill="none" opacity="0.7"/>
+                    
+                    {/* Small twigs and leaves */}
+                    <circle cx="90" cy="37.5" r="3" fill="#EC4899" opacity="0.8"/>
+                    <circle cx="300" cy="67.5" r="2.25" fill="#EC4899" opacity="0.8"/>
+                    <circle cx="105" cy="255" r="3" fill="#EC4899" opacity="0.8"/>
+                    <circle cx="285" cy="285" r="2.25" fill="#EC4899" opacity="0.8"/>
+                    <circle cx="97.5" cy="435" r="3" fill="#EC4899" opacity="0.8"/>
+                    <circle cx="292.5" cy="465" r="2.25" fill="#EC4899" opacity="0.8"/>
+                  </svg>
+                  
+                  {/* Vertical mandala-like design representing growth and transformation */}
+                  <div className="absolute inset-0 bg-gradient-to-b from-primary/30 via-secondary/30 to-accent/30 rounded-full animate-pulse z-20"></div>
+                  <div className="absolute inset-8 bg-gradient-to-b from-primary/40 via-secondary/40 to-accent/40 rounded-full animate-pulse z-20" style={{ animationDelay: '0.5s' }}></div>
+                  <div className="absolute inset-16 bg-gradient-to-b from-primary/50 via-secondary/50 to-accent/50 rounded-full animate-pulse z-20" style={{ animationDelay: '1s' }}></div>
+                  
+                  {/* Central elements representing BZEN's evolution - vertical layout */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center space-y-8 z-30">
+                    <div className="w-28 h-28 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center shadow-xl border-2 border-white/20">
+                      <Heart className="h-14 w-14 text-white" />
+                    </div>
+                    <div className="w-20 h-20 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center shadow-xl border-2 border-white/20">
+                      <Sparkles className="h-10 w-10 text-white" />
+                    </div>
+                    <div className="w-16 h-16 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center shadow-xl border-2 border-white/20">
+                      <Star className="h-8 w-8 text-white" />
+                    </div>
+                  </div>
+                  
+                  {/* Floating elements representing different therapies - vertical distribution */}
+                  <div className="absolute top-12 left-12 w-12 h-12 bg-primary/50 rounded-full animate-bounce shadow-lg z-30" style={{ animationDelay: '0.2s' }}></div>
+                  <div className="absolute top-40 right-12 w-8 h-8 bg-secondary/60 rounded-full animate-bounce shadow-lg z-30" style={{ animationDelay: '0.4s' }}></div>
+                  <div className="absolute top-72 left-6 w-10 h-10 bg-accent/55 rounded-full animate-bounce shadow-lg z-30" style={{ animationDelay: '0.6s' }}></div>
+                  <div className="absolute top-96 right-6 w-7 h-7 bg-primary/70 rounded-full animate-bounce shadow-lg z-30" style={{ animationDelay: '0.8s' }}></div>
+                  <div className="absolute bottom-12 left-12 w-8 h-8 bg-secondary/65 rounded-full animate-bounce shadow-lg z-30" style={{ animationDelay: '1s' }}></div>
+                </div>
+              </div>
               
               <div className="space-y-12">
                 {timeline.map((item, index) => (
