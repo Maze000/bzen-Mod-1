@@ -141,7 +141,7 @@ const Footer = () => {
                    type="email"
                    value={email}
                    onChange={(e) => setEmail(e.target.value)}
-                   placeholder="Tu correo electrónico"
+                   placeholder="Tu correo"
                    className="w-full pl-10 pr-4 py-2 bg-white border border-white/20 rounded-lg text-gray-800 placeholder-gray-500 focus:outline-none focus:border-white/40 focus:ring-2 focus:ring-white/30 transition-all duration-200"
                    required
                  />
