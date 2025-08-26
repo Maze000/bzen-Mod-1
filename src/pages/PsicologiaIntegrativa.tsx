@@ -85,22 +85,18 @@ const PsicologiaIntegrativa = () => {
   const sessionStructure = [
     {
       phase: 'Evaluación Integral',
-      duration: '15-20 min',
       description: 'Comprensión holística de la persona y su situación actual'
     },
     {
       phase: 'Exploración Profunda',
-      duration: '20-25 min',
       description: 'Trabajo terapéutico principal utilizando enfoques integrados'
     },
     {
       phase: 'Integración',
-      duration: '10-15 min',
       description: 'Consolidación de aprendizajes y planificación de acciones'
     },
     {
       phase: 'Cierre Consciente',
-      duration: '5-10 min',
       description: 'Finalización centrada y preparación para la vida cotidiana'
     }
   ];
@@ -330,12 +326,9 @@ const PsicologiaIntegrativa = () => {
                   <div className="bg-gradient-to-r from-primary to-secondary-light w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                     <span className="text-2xl font-bold text-white">{index + 1}</span>
                   </div>
-                  <h3 className="text-xl font-playfair font-bold text-text-primary mb-2">
+                  <h3 className="text-xl font-playfair font-bold text-text-primary mb-4">
                     {phase.phase}
                   </h3>
-                  <p className="text-sm text-primary font-medium mb-4">
-                    {phase.duration}
-                  </p>
                   <p className="text-text-secondary leading-relaxed">
                     {phase.description}
                   </p>
