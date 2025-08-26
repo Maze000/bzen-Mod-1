@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import therapistPortrait from '@/assets/therapist-portrait.jpg';
+import ignaciaPortrait from '@/assets/ignacia.png';
+import paolaPortrait from '@/assets/paola.jpg';
 
 const SobreBZEN = () => {
   const founderCredentials = [
@@ -150,98 +152,222 @@ const SobreBZEN = () => {
         {/* Origin Story */}
         <section className="py-16 lg:py-24 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-text-primary mb-6">
-                  Nuestro Origen
-                </h2>
-                <div className="space-y-6 text-body text-text-secondary">
-                  <p>
-                    Centro BZEN nace en el año <strong>2020</strong>, en medio del contexto de la pandemia, 
-                    como una respuesta amorosa a las crecientes necesidades de bienestar emocional y espiritual.
-                  </p>
-                  <p>
-                    En un momento donde el mundo se enfrentaba a la incertidumbre y el aislamiento, 
-                    BZEN emergió como un faro de luz, ofreciendo un espacio seguro para la sanación 
-                    y el crecimiento personal.
-                  </p>
-                  <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-xl">
-                    <p className="text-text-primary font-medium italic">
-                      "En BZEN creemos que cada experiencia de vida es una oportunidad de crecimiento y transformación. 
-                      Nuestro propósito es compartir la sabiduría ancestral, facilitar la conexión con el alma y 
-                      abrir las puertas a un universo infinito de posibilidades, siempre guiados por la energía 
-                      del Amor que mueve cada una de nuestras acciones."
-                    </p>
-                    <p className="text-sm text-text-secondary mt-2">— Centro BZEN</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-gradient-healing p-8 rounded-2xl">
-                <div className="text-center">
-                  <div className="bg-white p-6 rounded-full inline-block mb-6">
-                    <Sparkles className="h-16 w-16 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-playfair font-bold text-text-primary mb-4">
-                    Una Respuesta Amorosa
-                  </h3>
-                  <p className="text-text-secondary">
-                    Nacimos para servir, para acompañar, para transformar
-                  </p>
-                </div>
-              </div>
+                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+               <div className="flex flex-col justify-center">
+                 <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-text-primary mb-6">
+                   Nuestro Origen
+                 </h2>
+                 <div className="space-y-6 text-body text-text-secondary">
+                   <p>
+                     Centro BZEN nace en el año <strong>2020</strong>, en medio del contexto de la pandemia, 
+                     como una respuesta amorosa a las crecientes necesidades de bienestar emocional y espiritual.
+                   </p>
+                   <p>
+                     En un momento donde el mundo se enfrentaba a la incertidumbre y el aislamiento, 
+                     BZEN emergió como un faro de luz, ofreciendo un espacio seguro para la sanación 
+                     y el crecimiento personal.
+                   </p>
+                   <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-xl">
+                     <p className="text-text-primary font-medium italic">
+                       "En BZEN creemos que cada experiencia de vida es una oportunidad de crecimiento y transformación. 
+                       Nuestro propósito es compartir la sabiduría ancestral, facilitar la conexión con el alma y 
+                       abrir las puertas a un universo infinito de posibilidades, siempre guiados por la energía 
+                       del Amor que mueve cada una de nuestras acciones."
+                     </p>
+                     <p className="text-sm text-text-secondary mt-2">— Centro BZEN</p>
+                   </div>
+                 </div>
+               </div>
+               
+                               <div className="flex flex-col justify-center space-y-4">
+                 {/* Una Respuesta Amorosa */}
+                 <div className="bg-gradient-healing p-4 rounded-2xl">
+                   <div className="text-center">
+                     <div className="bg-white p-3 rounded-full inline-block mb-3">
+                       <Sparkles className="h-8 w-8 text-primary" />
+                     </div>
+                     <h3 className="text-lg font-playfair font-bold text-text-primary mb-2">
+                       Una Respuesta Amorosa
+                     </h3>
+                     <p className="text-text-secondary text-xs">
+                       Nacimos para servir, para acompañar, para transformar
+                     </p>
+                   </div>
+                 </div>
+
+                 {/* Sabiduría Ancestral */}
+                 <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-4 rounded-2xl">
+                   <div className="text-center">
+                     <div className="bg-white p-3 rounded-full inline-block mb-3">
+                       <Moon className="h-8 w-8 text-primary" />
+                     </div>
+                     <h3 className="text-lg font-playfair font-bold text-text-primary mb-2">
+                       Sabiduría Ancestral
+                     </h3>
+                     <p className="text-text-secondary text-xs">
+                       Conectamos con la sabiduría de nuestros ancestros y la tierra
+                     </p>
+                   </div>
+                 </div>
+
+                 {/* Ciencia Moderna */}
+                 <div className="bg-gradient-to-br from-secondary/10 to-accent/10 p-4 rounded-2xl">
+                   <div className="text-center">
+                     <div className="bg-white p-3 rounded-full inline-block mb-3">
+                       <Brain className="h-8 w-8 text-primary" />
+                     </div>
+                     <h3 className="text-lg font-playfair font-bold text-text-primary mb-2">
+                       Ciencia Moderna
+                     </h3>
+                     <p className="text-text-secondary text-xs">
+                       Integramos los avances científicos con el conocimiento ancestral
+                     </p>
+                   </div>
+                 </div>
+               </div>
             </div>
           </div>
         </section>
 
-        {/* Founder Section */}
+        {/* Team Section */}
         <section className="py-16 lg:py-24 bg-gradient-healing">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-playfair font-bold text-text-primary mb-6">
-                Paola Molina
+                Nuestro Equipo
               </h2>
-              <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
-                Fundadora y guía espiritual de Centro BZEN
+              <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+                Profesionales comprometidos con tu bienestar integral
               </p>
-              
-              {/* Founder Image */}
-              <div className="flex justify-center mb-8">
-                <div className="relative">
-                  <img
-                    src={therapistPortrait}
-                    alt="Paola Molina - Fundadora de Centro BZEN"
-                    className="w-48 h-48 object-cover rounded-full shadow-healing border-4 border-white"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-full"></div>
-                  
-                  {/* Decorative elements */}
-                  <div className="absolute -top-2 -right-2 w-8 h-8 bg-secondary/20 rounded-full blur-xl"></div>
-                  <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-accent/30 rounded-full blur-lg"></div>
-                </div>
-              </div>
-              
-              <div className="bg-white/80 backdrop-blur-sm rounded-radius-lg p-6 max-w-2xl mx-auto">
-                <p className="text-text-secondary italic">
-                  "He podido entender claramente que todas las experiencias que he vivido están relacionadas 
-                  con mi propósito de vida: compartir a través de BZEN la sabiduría, la conexión con el alma 
-                  y este universo infinito de posibilidades, poniendo como base la energía del Amor que me 
-                  mueve en cada una de las cosas que siento y hago."
-                </p>
-                <p className="text-sm text-text-secondary mt-2 text-right">— Paola Molina</p>
-              </div>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {founderCredentials.map((credential, index) => (
-                <div key={index} className="bg-white rounded-radius-lg p-6 shadow-card hover:shadow-healing transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-soft rounded-radius flex items-center justify-center mb-4">
-                    <credential.icon className="h-6 w-6 text-primary" />
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Paola Molina - Left Container */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-radius-lg p-8 shadow-card hover:shadow-healing transition-all duration-300">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-playfair font-bold text-text-primary mb-4">
+                    Paola Molina
+                  </h3>
+                  <p className="text-lg text-text-secondary mb-6">
+                    Fundadora y guía espiritual de Centro BZEN
+                  </p>
+                  
+                  {/* Founder Image */}
+                  <div className="flex justify-center mb-6">
+                    <div className="relative">
+                                               <img
+                           src={paolaPortrait}
+                           alt="Paola Molina - Fundadora de Centro BZEN"
+                           className="w-48 h-48 object-cover rounded-full shadow-healing border-4 border-white"
+                         />
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-full"></div>
+                      
+                      {/* Decorative elements */}
+                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-secondary/20 rounded-full blur-xl"></div>
+                      <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-accent/30 rounded-full blur-lg"></div>
+                    </div>
                   </div>
-                  <h4 className="font-semibold text-text-primary mb-2">{credential.title}</h4>
-                  <p className="text-sm text-text-secondary">{credential.description}</p>
+                  
+                  <div className="bg-gradient-healing p-6 rounded-radius-lg">
+                    <p className="text-text-secondary italic text-sm">
+                      "He podido entender claramente que todas las experiencias que he vivido están relacionadas 
+                      con mi propósito de vida: compartir a través de BZEN la sabiduría, la conexión con el alma 
+                      y este universo infinito de posibilidades, poniendo como base la energía del Amor que me 
+                      mueve en cada una de las cosas que siento y hago."
+                    </p>
+                    <p className="text-xs text-text-secondary mt-2 text-right">— Paola Molina</p>
+                  </div>
                 </div>
-              ))}
+
+                {/* Paola's Credentials */}
+                <div>
+                  <h4 className="text-xl font-semibold text-text-primary mb-6 text-center">Formación Profesional</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {founderCredentials.map((credential, index) => (
+                      <div key={index} className="bg-gradient-healing p-4 rounded-radius-lg shadow-card hover:shadow-healing transition-all duration-300">
+                        <div className="w-10 h-10 bg-white rounded-radius flex items-center justify-center mb-3">
+                          <credential.icon className="h-5 w-5 text-primary" />
+                        </div>
+                        <h5 className="font-semibold text-text-primary mb-1 text-sm">{credential.title}</h5>
+                        <p className="text-xs text-text-secondary">{credential.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Ignacia Santa Cruz - Right Container */}
+              <div className="bg-white/90 backdrop-blur-sm rounded-radius-lg p-8 shadow-card hover:shadow-healing transition-all duration-300">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-playfair font-bold text-text-primary mb-4">
+                    Ignacia Santa Cruz Handwerck
+                  </h3>
+                  <p className="text-lg text-text-secondary mb-6">
+                    Psicóloga Clínica
+                  </p>
+                  
+                                     {/* Psychologist Image */}
+                   <div className="flex justify-center mb-6">
+                     <div className="relative">
+                       <img
+                         src={ignaciaPortrait}
+                         alt="Ignacia Santa Cruz Handwerck - Psicóloga Clínica"
+                         className="w-48 h-48 object-cover rounded-full shadow-healing border-4 border-white"
+                       />
+                       <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent rounded-full"></div>
+                       
+                       {/* Decorative elements */}
+                       <div className="absolute -top-2 -right-2 w-8 h-8 bg-secondary/20 rounded-full blur-xl"></div>
+                       <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-accent/30 rounded-full blur-lg"></div>
+                     </div>
+                   </div>
+                  
+                  <div className="bg-gradient-healing p-6 rounded-radius-lg">
+                    <p className="text-text-secondary italic text-sm">
+                      "Trabajo desde un enfoque humanista-integrativo, ofreciendo un espacio de escucha activa, 
+                      contención y crecimiento personal. Mi objetivo es promover el bienestar emocional 
+                      respetando el ritmo y singularidad de cada paciente."
+                    </p>
+                    <p className="text-xs text-text-secondary mt-2 text-right">— Ignacia Santa Cruz</p>
+                  </div>
+                </div>
+
+                {/* Ignacia's Credentials */}
+                <div>
+                  <h4 className="text-xl font-semibold text-text-primary mb-6 text-center">Formación Profesional</h4>
+                  <div className="space-y-4">
+                    <div className="bg-gradient-healing p-4 rounded-radius-lg shadow-card hover:shadow-healing transition-all duration-300">
+                      <div className="w-10 h-10 bg-white rounded-radius flex items-center justify-center mb-3">
+                        <Brain className="h-5 w-5 text-primary" />
+                      </div>
+                      <h5 className="font-semibold text-text-primary mb-1">Psicóloga Clínica</h5>
+                      <p className="text-sm text-text-secondary">Titulada de la Universidad UNIACC, con formación sólida y vocación por el acompañamiento emocional.</p>
+                    </div>
+                    
+                    <div className="bg-gradient-healing p-4 rounded-radius-lg shadow-card hover:shadow-healing transition-all duration-300">
+                      <div className="w-10 h-10 bg-white rounded-radius flex items-center justify-center mb-3">
+                        <Heart className="h-5 w-5 text-primary" />
+                      </div>
+                      <h5 className="font-semibold text-text-primary mb-1">Enfoque Humanista-Integrativo</h5>
+                      <p className="text-sm text-text-secondary">Espacio de escucha activa, contención y crecimiento personal.</p>
+                    </div>
+
+                    <div className="bg-gradient-healing p-4 rounded-radius-lg shadow-card hover:shadow-healing transition-all duration-300">
+                      <div className="w-10 h-10 bg-white rounded-radius flex items-center justify-center mb-3">
+                        <Shield className="h-5 w-5 text-primary" />
+                      </div>
+                      <h5 className="font-semibold text-text-primary mb-1">Especialidades</h5>
+                      <div className="grid grid-cols-2 gap-2 text-xs text-text-secondary">
+                        <div>• Ansiedad y Depresión</div>
+                        <div>• Procesos de Duelo</div>
+                        <div>• Relaciones Interpersonales</div>
+                        <div>• Autoestima</div>
+                        <div>• Procesos de Cambio</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

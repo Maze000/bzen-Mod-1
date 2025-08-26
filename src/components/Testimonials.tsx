@@ -1,5 +1,6 @@
 import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, Users, Heart, Clock } from 'lucide-react';
+import ImageCarousel from './ImageCarousel';
 
 const Testimonials = () => {
   const testimonials = [
@@ -74,19 +75,12 @@ const Testimonials = () => {
                 </blockquote>
 
                 {/* Author */}
-                <div className="flex items-center space-x-4 pt-4 border-t border-primary/10">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover shadow-soft"
-                  />
-                  <div>
-                    <div className="font-semibold text-text-primary">
-                      {testimonial.name}
-                    </div>
-                    <div className="text-sm text-text-muted">
-                      {testimonial.role}
-                    </div>
+                <div className="pt-4 border-t border-primary/10">
+                  <div className="font-semibold text-text-primary">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-text-muted">
+                    {testimonial.role}
                   </div>
                 </div>
               </div>
@@ -94,25 +88,39 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Stats section */}
-        <div className="mt-20 fade-in">
-          <div className="bg-gradient-soft rounded-radius-lg p-8 lg:p-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">500+</div>
-                <div className="text-text-secondary">Personas acompañadas</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-4xl font-bold text-secondary">95%</div>
-                <div className="text-text-secondary">Satisfacción reportada</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-4xl font-bold text-accent">5</div>
-                <div className="text-text-secondary">Años de experiencia</div>
-              </div>
-            </div>
-          </div>
+        {/* Image Carousel */}
+        <div className="mt-16">
+          <ImageCarousel />
         </div>
+
+                 {/* Stats section */}
+         <div className="mt-16 fade-in">
+           <div className="bg-gradient-to-r from-primary to-secondary rounded-radius-lg p-6 lg:p-10">
+                           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                               <div className="space-y-2">
+                  <div className="flex justify-center">
+                    <Users className="h-6 w-6 text-cyan-200 mb-1" />
+                  </div>
+                  <div className="text-3xl font-bold text-cyan-200">200+</div>
+                  <div className="text-white text-sm">Personas acompañadas</div>
+                </div>
+               <div className="space-y-2">
+                 <div className="flex justify-center">
+                   <Heart className="h-6 w-6 text-secondary mb-1" />
+                 </div>
+                 <div className="text-3xl font-bold text-secondary">95%</div>
+                 <div className="text-white text-sm">Satisfacción reportada</div>
+               </div>
+               <div className="space-y-2">
+                 <div className="flex justify-center">
+                   <Clock className="h-6 w-6 text-accent mb-1" />
+                 </div>
+                 <div className="text-3xl font-bold text-accent">5</div>
+                 <div className="text-white text-sm">Años de experiencia</div>
+               </div>
+              </div>
+           </div>
+         </div>
       </div>
     </section>
   );

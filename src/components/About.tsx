@@ -1,7 +1,7 @@
 import React from 'react';
 import { Heart, Sparkles, Users, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import therapistPortrait from '@/assets/therapist-portrait.jpg';
+import therapistPortrait from '@/assets/therapist-portrait.png';
 
 const About = () => {
   const values = [

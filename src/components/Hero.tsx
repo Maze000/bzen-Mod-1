@@ -33,33 +33,39 @@ const Hero = () => {
                 Conoce nuestras terapias
               </a>
             </div>
+            
+            <div className="flex justify-center sm:justify-start">
+              <a 
+                href="/gemoterapia" 
+                className="group inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary/20 to-primary/30 backdrop-blur-sm border border-primary/40 rounded-full text-sm font-semibold text-primary hover:from-primary/30 hover:to-primary/40 hover:border-primary/50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-primary/25"
+              >
+                <svg className="w-4 h-4 mr-2 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <span className="relative">
+                  Diplomado en Gemoterapia
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </span>
+              </a>
+            </div>
 
             {/* Trust indicators */}
             <div className="flex flex-wrap gap-4 lg:gap-6 pt-6 lg:pt-8 border-t border-primary/10">
+              <div className="flex items-center space-x-2">
+                <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+                <span className="text-sm text-text-muted">Enfoque integrativo</span>
+              </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
                 <span className="text-sm text-text-muted">Atención presencial y online</span>
               </div>
               <div className="flex items-center space-x-2">
-                <a 
-                  href="#isapres" 
-                  className="group inline-flex items-center px-4 py-2 bg-gradient-to-r from-secondary/20 to-secondary/30 backdrop-blur-sm border border-secondary/40 rounded-full text-sm font-semibold text-secondary hover:from-secondary/30 hover:to-secondary/40 hover:border-secondary/50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl hover:shadow-secondary/25"
-                >
-                  <svg className="w-4 h-4 mr-2 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-                    <path d="M12 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
-                    <path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
-                  </svg>
-                  <span className="relative">
-                    Convenios ISAPRES
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-secondary transition-all duration-300 group-hover:w-full"></span>
-                  </span>
+                <div className="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
+                <a href="#isapres" className="text-sm text-text-muted hover:text-secondary transition-colors duration-200">
+                  Convenios ISAPRES
                 </a>
               </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                <span className="text-sm text-text-muted">Enfoque integrativo</span>
-              </div>
+              
             </div>
           </div>
 

@@ -22,6 +22,7 @@ import MindfulnessTerapiaEvolutiva from './pages/MindfulnessTerapiaEvolutiva';
 import TalleresEmpresas from './pages/TalleresEmpresas';
 import TallerCrecimiento from './pages/TallerCrecimiento';
 import SobreBZEN from './pages/SobreBZEN';
+import GemoterapiaDiploma from './pages/GemoterapiaDiploma';
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
           <Route path="/talleres-empresas" element={<TalleresEmpresas />} />
           <Route path="/taller-crecimiento" element={<TallerCrecimiento />} />
           <Route path="/sobre-bzen" element={<SobreBZEN />} />
+          <Route path="/gemoterapia" element={<GemoterapiaDiploma />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

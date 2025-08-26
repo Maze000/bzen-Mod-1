@@ -5,6 +5,7 @@ import therapyHands from '@/assets/therapy-hands.jpg';
 import therapyOffice from '@/assets/therapy-office.jpg';
 import workshopCorporate from '@/assets/workshop-corporate.jpg';
 import heroMeditation from '@/assets/hero-meditation.jpg';
+import mindfulnessImage from '@/assets/Mindfulness.png';
 
 const FeaturedServices = () => {
   const services = [
@@ -32,7 +33,7 @@ const FeaturedServices = () => {
       id: 3,
       title: 'Mindfulness y Terapia Evolutiva',
       description: 'Acompañamiento consciente en tu proceso de autoconocimiento y crecimiento personal.',
-      image: therapyOffice,
+      image: mindfulnessImage,
       icon: Sparkles,
       gradient: 'bg-gradient-to-br from-accent/10 to-primary/10',
       reverse: false,

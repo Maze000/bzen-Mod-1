@@ -11,7 +11,6 @@ const Header = () => {
   const navigation = [
     { name: 'Inicio', href: '/', external: false },
     { name: 'Sobre Nosotros', href: '/#sobre', external: false },
-    { name: 'Sobre BZEN', href: '/sobre-bzen', external: true },
     { name: 'Terapias', href: '/#terapias', external: false },
     { name: 'Psicología', href: '/#psicologia', external: false },
     { name: 'Talleres', href: '/#talleres', external: false },

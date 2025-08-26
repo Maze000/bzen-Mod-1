@@ -4,7 +4,6 @@ import Hero from '@/components/Hero';
 import FeaturedServices from '@/components/FeaturedServices';
 import ServicesGrid from '@/components/ServicesGrid';
 import Workshops from '@/components/Workshops';
-import GemotherapyDiploma from '@/components/GemotherapyDiploma';
 import PsychologySection from '@/components/PsychologySection';
 import Testimonials from '@/components/Testimonials';
 import About from '@/components/About';
@@ -20,7 +19,6 @@ const Index = () => {
         <FeaturedServices />
         <ServicesGrid />
         <Workshops />
-        <GemotherapyDiploma />
         <PsychologySection />
         <Testimonials />
         <About />

@@ -6,6 +6,8 @@ import {
   ArrowLeft, Calendar, Clock, User, 
   Flower, Droplets, CheckCircle, UserCheck
 } from 'lucide-react';
+import ignaciaPortrait from '@/assets/ignacia.png';
+import paolaPortrait from '@/assets/paola.jpg';
 
 const TerapiaEvolutivaSanacion = () => {
   return (
@@ -495,7 +497,7 @@ const TerapiaEvolutivaSanacion = () => {
                 <div className="relative mb-6">
                   <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-2xl ring-4 ring-primary/20">
                     <img 
-                      src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face&auto=format&q=80" 
+                      src={paolaPortrait}
                       alt="Paola Molina Escobar - Terapeuta Holística"
                       className="w-full h-full object-cover"
                     />
@@ -547,7 +549,7 @@ const TerapiaEvolutivaSanacion = () => {
                 <div className="relative mb-6">
                   <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-2xl ring-4 ring-secondary/20">
                     <img 
-                      src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=face&auto=format&q=80" 
+                      src={ignaciaPortrait}
                       alt="Ignacia Santa Cruz Handwerck - Psicóloga Clínica"
                       className="w-full h-full object-cover"
                     />
@@ -565,15 +567,6 @@ const TerapiaEvolutivaSanacion = () => {
               </div>
               
               <div className="space-y-4 mb-6">
-                <p className="text-text-secondary leading-relaxed">
-                  Psicóloga Clínica titulada de la Universidad UNIACC, con formación sólida y 
-                  vocación por el acompañamiento emocional.
-                </p>
-                <p className="text-text-secondary leading-relaxed">
-                  Cuenta con experiencia en atención psicológica a personas adultas, abordando 
-                  temáticas como ansiedad, depresión, duelos, relaciones interpersonales, 
-                  autoestima y procesos de cambio.
-                </p>
                 <p className="text-text-secondary leading-relaxed italic">
                   "Trabajo desde un enfoque humanista-integrativo, ofreciendo un espacio de 
                   escucha activa, contención y crecimiento personal. Mi objetivo es promover 
