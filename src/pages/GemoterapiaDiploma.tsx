@@ -1,12 +1,16 @@
 import React from 'react';
 import { ArrowLeft, Gem, Sparkles, BookOpen, Users, Clock, Heart, Star, CheckCircle, Award, Zap, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const GemoterapiaDiploma = () => {
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-secondary to-primary text-white py-20">
+    <div className="min-h-screen overflow-x-hidden">
+      <Header />
+      <main className="overflow-x-hidden">
+        {/* Header */}
+        <div className="bg-gradient-to-r from-secondary to-primary text-white py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link 
             to="/" 
@@ -493,12 +497,12 @@ const GemoterapiaDiploma = () => {
             con la sabiduría ancestral de los cristales.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#contacto" 
+            <Link 
+              to="/#contacto" 
               className="btn-accent inline-flex items-center justify-center"
             >
               ¡Inscríbete Ahora!
-            </a>
+            </Link>
             <Link 
               to="/" 
               className="btn-ghost inline-flex items-center justify-center"
@@ -507,7 +511,9 @@ const GemoterapiaDiploma = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </main>
+      
+      <Footer />
     </div>
   );
 };
