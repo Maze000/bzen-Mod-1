@@ -46,14 +46,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'contacto@bzen.cl',
-      href: 'mailto:contacto@bzen.cl'
+      value: 'centrobzen@gmail.com',
+      href: 'mailto:centrobzen@gmail.com'
     },
     {
       icon: Phone,
       label: 'WhatsApp',
-      value: '+56 9 1234 5678',
-      href: 'https://wa.me/56912345678'
+      value: '+56 9 66893574',
+      href: 'https://wa.me/66893574'
     },
     {
       icon: MapPin,
