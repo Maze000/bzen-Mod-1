@@ -36,7 +36,7 @@ const Footer = () => {
     },
     {
       name: 'WhatsApp',
-      href: 'https://wa.me/56912345678',
+      href: 'https://wa.me/56966893574',
       icon: MessageCircle,
     },
   ];
@@ -180,7 +180,7 @@ const Footer = () => {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/56912345678"
+        href="https://wa.me/56966893574"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 bg-accent text-white rounded-full flex items-center justify-center shadow-glow hover:scale-110 transition-transform duration-300 z-50"
