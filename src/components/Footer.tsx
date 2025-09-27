@@ -122,8 +122,8 @@ const Footer = () => {
               ))}
             </div>
             <div className="text-sm text-white/80 space-y-1">
-              <p>contacto@bzen.cl</p>
-              <p>+56 9 1234 5678</p>
+              <p>centrobzen@bzen.cl</p>
+              <p>+56 9 66893574</p>
               <p>Providencia, Santiago</p>
             </div>
           </div>
