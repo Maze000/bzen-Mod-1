@@ -175,7 +175,7 @@ const Contact = () => {
                     ¿Prefieres hablar directamente?
                   </p>
                   <a 
-                    href="https://wa.me/56912345678" 
+                    href="https://wa.me/56966893574" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="btn-accent inline-flex items-center"
